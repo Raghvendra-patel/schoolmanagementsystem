@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Assignment</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .form-container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+  }
+
+  .form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Add Assignment</h2>
+    <form action="adda" method="post">
+      <label for="sid">Student ID:</label>
+      <input type="number" id="sid" name="sid" required>
+      
+      <label for="aid">Assignment ID:</label>
+      <input type="number" id="aid" name="aid" required>
+      
+      <label for="aname">Assignment Name:</label>
+      <input type="text" id="aname" name="aname" required>
+      
+      <label for="amarks">Assignment Marks:</label>
+      <input type="number" id="amarks" name="amarks" required>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
